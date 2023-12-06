@@ -1,9 +1,9 @@
-project 'glfw'
+project 'GLFW'
 	kind 'StaticLib'
 	language 'C'
 
-	target_dir = ('bin/' .. output_dir .. '/%{prj.name}')
-	obj_dir = ('bin-int/' .. output_dir .. '/%{prj.name}')
+	targetdir (bin_path)
+	objdir (int_path)
 
 	files {
 		'include/GLFW/glfw3.h',
